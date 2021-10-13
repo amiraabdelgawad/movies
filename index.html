@@ -1,0 +1,122 @@
+<html>
+<head>
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+
+
+</head>
+<body>
+    <!-- navbar -->
+    <section>
+        <div id="sideNavbar" class="text-center ">
+            <div class="logo pt-3">
+                <img src="images/logo.png" alt="">
+            </div>
+
+            <div id="toggle">
+                <i id="openBtn" class="fa fa-align-justify fs-3"></i>
+                <i id="closeBtn" class="fa fa-times fs-3"></i>
+            </div>
+
+            <div class="sideSocialIcon">
+                <i class="fas fa-globe mb-4"></i>
+                <i class="fas fa-share-alt"></i>
+            </div>
+        </div>
+        <div id="navMenu">
+            <ul>
+                <li><a href="#" movieType = "now_playing">Now playing</a></li>
+                <li><a href="#" movieType = "popular">Popular</a></li>
+                <li><a href="#" movieType = "top_rated">Top Rated</a></li>
+                <li><a href="#" movieType = "trending">Trending</a></li>
+                <li><a href="#" movieType = "upcoming">Upcoming</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+            </ul>
+
+            <div class="social-icons ">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fas fa-globe"></i></a>
+                <div class="pt-3">Copyright Â© 2019 All Rights Reserved.</div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- movies -->
+    <header class="mt-5">
+        <div class="container w-75 py-5">
+            <div class="row g-3">
+                <div class="col-md-6">
+                    <input id="apiSearch" type="text" class="form-control text-center myStyle" placeholder="Get movies by word..." >
+                </div>
+                <div class="col-md-6">
+                    <input id="search" type="text" class="form-control text-center myStyle" placeholder="Search..." >
+                </div>
+            </div>
+        </div>
+
+        <div class="container m-auto py-2 ">
+            <div class="row" id="rowData">
+            </div>
+        </div>
+    </header>
+
+    <!-- contact section -->
+    <section id="contact" class="py-5">
+        <div class="container w-75 m-auto">
+            <h2 class="text-light">Contact Us...</h2>
+            <div class="row py-2">
+                <div class="col-md-6 my-2">
+                    <div class="form-input">
+                        <input id="userName" type="text" class="form-control myStyle" placeholder="Enter your name">
+                        <div id="alertName" class="alert alert-danger d-none">Name is not valid (must start with capital letter)</div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 my-2">
+                    <div class="form-input">
+                        <input id="userEmail" type="email" class="form-control myStyle" placeholder="Enter Email">
+                        <div id="alertEmail" class="alert alert-danger d-none">Enter valid email</div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 my-2">
+                    <div class="form-input">
+                        <input id="phone" type="number" class="form-control myStyle" placeholder="Enter phone number">
+                        <div id="alertPhone" class="alert alert-danger d-none">Enter valid phone number</div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 my-2">
+                    <div class="form-input">
+                        <input id="age" type="number" class="form-control myStyle" placeholder="Enter your age">
+                        <div id="alertAge" class="alert alert-danger d-none">Enter valid age (must be greater than 9)</div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 my-2">
+                    <div class="form-input">
+                        <input id="password" type="password" class="form-control myStyle" placeholder="Enter Password">
+                        <div id="passwordAlert" class="alert alert-danger d-none">entre valid password *Minimum eight characters, at least one letter and one number:*</div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 my-2">
+                    <div class="form-input">
+                        <input id="repass" type="password" class="form-control myStyle " placeholder="Enter Repassowrd">
+                        <div id="alertRepass" class="alert alert-danger d-none">Not matched</div>
+                    </div>
+                </div>
+            </div>
+            <button id="submit" disabled class="btn btn-outline-danger">Submit</button>
+        </div>
+    </section>
+
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

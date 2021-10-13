@@ -1,0 +1,140 @@
+body{
+    background-color: #000000f2;
+    font-family: 'Segoe UI Light', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/**********************sideNav************************/
+
+#sideNavbar{
+    position: fixed;
+    top: 0;
+    left: 0px;
+    bottom: 0;
+    width: 60px;
+    background-color: #f8f6f6;
+    transition: all 0.5s ease-in-out;
+    z-index: 5555555;
+
+}
+#sideNavbar .logo img{
+    width: 50%;
+}
+#toggle{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    cursor: pointer;
+}
+#sideNavbar .sideSocialIcon{
+    position: absolute;
+    bottom : 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    cursor: pointer;
+}
+#navMenu{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 250px;
+    bottom: 0;
+    background-color: #000;
+    transform: translateX(-100%);
+    transition: all 0.5s ease-in-out;
+    z-index: 5555555;
+
+}
+.open{
+    transform: scale(1) !important;
+}
+.close{
+    transform: translateX(-100%) !important;
+}
+#navMenu ul{
+    list-style: none;
+}
+#navMenu ul li{
+    opacity: 0;
+    padding-top: 500px;
+}
+#navMenu li a{
+    text-decoration: none;
+    color: #f9f6f6;
+    font-weight: 500;
+    font-size: 16px;
+    transition: all 0.3s ease-in-out;
+}
+#navMenu li a:hover{
+    color:#ff655c
+}
+.social-icons{
+    position: absolute;
+    left: 20px;
+    bottom:50px;
+    color: #f8f6f6;
+}
+.social-icons a{
+    color: #f8f6f6;
+    padding-left: 15px;
+    transition: all 0.3s ease-in-out;
+
+}
+.social-icons a:hover{
+    color: #ff655c;
+}
+#closeBtn{
+    display: none;
+}
+.display{
+    display: none;
+}
+
+/**********************header section************************/
+.myStyle{
+    background-color: transparent;
+    border: none;
+    border-radius: 0;
+    border-bottom: 1px solid #ced4da;
+    color: #ced4da;
+}
+.form-control:focus {
+    background-color: transparent;
+}
+.movie-info{
+    position: absolute;
+    height: 100%;
+    bottom: -100%;
+    left: 0;
+    right: 0;
+    background-color: rgba(255,255,255,.7);
+    transition: alL 0.8s ease-in-out;
+}
+.movie-info h2{
+    font-weight: 700;
+}
+.movie-info p{
+    font-weight: 600;
+}
+.movie{
+    border-radius: 5px;
+}
+.movie:hover .movie-info{
+    bottom: 0;
+}
+
+/**********************contact section************************/
+.display-valid{
+    display: none;
+}
+
+@media screen and (max-width: 580px)  {
+    /* .myM{
+        margin-left: 3.8rem!important;} */
+        #rowData{
+            width: 90%;
+        }
+        .m-style{
+            margin-left: 70px;
+        }
+}
